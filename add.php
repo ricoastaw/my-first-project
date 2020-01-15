@@ -29,8 +29,8 @@
     <!-- kategori brg -->
         <div class="form-group row-1">
             <label for="" class="col-sm-2 col-form-label ">Kategori Barang</label>
-                <select class="custom-select col-sm-2" >
-                <option value="">Pilih Kategori Barang</option>
+                <select class="custom-select col-sm-2"  id="id_kategori" name="id_kategori"  >
+                <option >Pilih Kategori Barang</option>
             <?php 
                 include ("conf/koneksi.php");
                 $sql = mysqli_query($con,"Select * from kategori"); 
@@ -72,7 +72,7 @@
         <!-- <div class="form-group row">
             <label for="" class="col-sm-2 col-form-label">Tanggal Masuk</label>
             <div class="col-sm-8">
-            <input type="date" class="form-control" id="tgl_masuk" name="tanggal">
+            <input type="date" class="form-control" id="tgl_masuk" name="tgl_masuk">
             </div>
         </div>  -->
 
