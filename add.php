@@ -33,10 +33,8 @@
                 <option value="">Pilih Kategori Barang</option>
             <?php 
                 include ("conf/koneksi.php");
-                $sql = mysqli_query($con,"Select * from kategori");
-               
-                
-                ?>
+                $sql = mysqli_query($con,"Select * from kategori"); 
+            ?>
                 <?php
                 while ($r = mysqli_fetch_array($sql)){
                     echo "<option value=$r[id_kategori]>$r[nama_kategori]</option>";
