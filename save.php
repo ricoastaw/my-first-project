@@ -5,7 +5,7 @@
 // $sql = mysqli_query($con, "INSERT into barang ( id_barang, id_kategori, nama, deskripsi, jumlah ) 
 //                             values (342, 1, 'cek', 'iki deskripsi', 13");
 
-//                                 //    yo OPOhttps://www.w3schools.com/php/php_mysql_insert.asp
+//                                
 
 //         if ($sql) {
             
@@ -16,8 +16,8 @@
         
  //   }
   
- $sql = "INSERT into barang ( id_barang, id_kategori, nama, deskripsi, jumlah ) 
-  values ($_POST[id_barang], $_POST[id_kategori], '$_POST[nama]', '$_POST[deskripsi]', $_POST[jumlah])";
+ $sql = "INSERT into barang ( id_barang, id_kategori, nama, deskripsi, jumlah, tgl_masuk, harga_jual ) 
+  values ($_POST[id_barang], $_POST[id_kategori], '$_POST[nama]', '$_POST[deskripsi]', $_POST[jumlah], '$_POST[tgl_masuk]', '$_POST[harga_jual]')";
 
  
  if (mysqli_query($con, $sql)) {

@@ -16,36 +16,6 @@
     $tampil = mysqli_query($con,"Select * from barang");
 ?>
 
-<!-- <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table> -->
-
 <div class="container ">
     <h2>Tampil Data Barang</h2>
     <p>Menampilkan data-data barang pada inventory</p>
@@ -81,7 +51,7 @@
                 <td>$r2[nama_kategori]</td>    
                 <td>$r[deskripsi]</td>    
                 <td>
-                    <button type='button' class='btn btn-success'><img src='assets/icons/gear.svg' alt='' width='32' height='32'></button>
+                    <a href='mod.php'><button type='button' class='btn btn-success'><img src='assets/icons/gear.svg' alt='' width='32' height='32'></button></a>
                     <button type='button' class='btn btn-danger'><img src='assets/icons/trash.svg' alt='' width='32' height='32'></button>
                 </td>
             </tr>    
@@ -91,6 +61,8 @@
 ?>
   </tbody>
 </table>
+
+
 </div>    
 </body>
 </html>
